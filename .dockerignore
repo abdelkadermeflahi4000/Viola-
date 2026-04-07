@@ -1,0 +1,46 @@
+# .dockerignore
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Rust
+target/
+*.rs.bk
+Cargo.lock
+
+# بيئة افتراضية
+venv/
+ENV/
+.env
+
+# بيانات حساسة
+*.pem
+*.key
+profiles/*.json
+!profiles/default.example.json
+
+# وثائق تطوير (غير ضرورية في الحاوية)
+docs/*.md
+!.docs/ARCHITECTURE.md
+*.ipynb

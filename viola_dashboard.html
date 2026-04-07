@@ -1,0 +1,21 @@
+<!-- viola_dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viola Monitor</title>
+    <style>
+        body { background: #000; color: #0f0; font-family: monospace; }
+        .status { padding: 20px; border: 1px solid #0f0; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🌸 Viola Status</h1>
+    <div class="status" id="status">جاري التحميل...</div>
+    <script>
+        fetch('http://192.168.x.x:8080/health')
+            .then(r => r.json())
+            .then(d => document.getElementById('status').innerText = JSON.stringify(d, null, 2));
+    </script>
+</body>
+</html>
