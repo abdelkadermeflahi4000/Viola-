@@ -73,32 +73,6 @@ VIOLA (**V**iola **I**ntegrated **O**scillation **L**edger **A**rchitecture) is 
 | **Agreement** | Competition — one winner, rest lose | Resonance — cooperative convergence |
 | **Decentralization** | 4 pools control 70%+ of hashrate | No pool advantage — frequency is free |
 
----
-
-## ∿ Mathematical Foundation
-
-Every piece of information in VIOLA is not a "transaction" in a "block" — it is a **wave function**:
-
-```
-Iₖ(t) = Aₖ · e^(i·(2π·fₖ·t + φₖ))
-```
-
-| Symbol | Meaning |
-|--------|---------|
-| `fₖ` | Information type frequency — the **atomic identity** |
-| `Aₖ` | Amplitude — **value / importance** of the information |
-| `φₖ` | Phase — **precise temporal position** |
-| `τₖ` | Nanosecond timestamp — **atomic time anchor** |
-
-### Consensus Equation
-
-```
-R(t) = min_ε | f_BTC − g_BIO − h_COG | < ε
-
-TRS  = (1 − R) · |PhaseCoherence|
-```
-
-Consensus is not achieved by finding a hash smaller than a target. It is achieved when nodes **resonate** — when Bitcoin network frequency, biological sensor data, and cognitive signals converge within epsilon.
 
 ### The Periodic Table of Information
 
@@ -136,13 +110,8 @@ Each type of data has its own natural frequency — and the network knows how to
 │   Layer 1            │   Biological Layer           │
 │                      │   BPV + Heart Rate + Sensors │
 └──────────────────────┴──────────────────────────────┘
-                         ↓
-              ┌─────────────────────┐
-              │   FAVUS HEX GRID    │
-              │   ⬡ ⬡ ⬡ ⬡ ⬡ ⬡     │
-              │  ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡    │
-              │   Settlement Layer  │
-              └─────────────────────┘
+                         
+
 ```
 
 ### Key Components
